@@ -96,24 +96,24 @@ const Asignup = () => {
           <div>
             <button
               type="submit"
-              className="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring focus:border-indigo-300 transition-all duration-300"
+              className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring focus:border-indigo-300 transition-all duration-300"
             >
               Signup
             </button>
           </div>
 
           <p className="text-sm text-gray-600">
-            Already have an account{' '}
+            Already have an account?{' '}
             <button
               onClick={formHandle1}
-              className="text-indigo-500 hover:underline focus:outline-none focus:ring focus:border-indigo-300 transition-all duration-300"
+              className="text-bg-gray-500 hover:underline focus:outline-none focus:ring focus:border-indigo-300 transition-all duration-300"
             >
               Login
             </button>
           </p>
         </form>
 
-        <div className="absolute h-full w-full bg-indigo-500 transform -skew-y-6 origin-bottom-right"></div>
+        <div className="absolute h-full w-full bg-gray-500 transform -skew-y-6 origin-bottom-right"></div>
        
       </div>
     </div>
