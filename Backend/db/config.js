@@ -16,8 +16,8 @@ useUnifiedTopology: true,
 
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/Book-Store', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
+  //useNewUrlParser: true,
+ // useUnifiedTopology: true
 })
 .then(() => console.log('MongoDB connected'))
 .catch((err) => console.log('MongoDB connection error:', err));

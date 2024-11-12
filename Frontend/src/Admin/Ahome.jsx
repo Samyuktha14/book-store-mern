@@ -157,6 +157,7 @@ function Ahome() {
   return (
     <div>
         <Anavbar/>
+        <br />
       <h3 className="text-center" style={{color:""}}>DashBoard</h3>
       <Card body style={{ background: "white", width: "80%", marginLeft: "10%", marginTop: "20px", height: "580px" }}>
         <div className="flex justify-around items-center p-4">

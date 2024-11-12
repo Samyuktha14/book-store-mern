@@ -7,7 +7,7 @@ import {Link } from "react-router-dom"
 const Anavbar = () => {
   const get=localStorage.getItem('user')
   return (
-    <Navbar bg="" variant="dark" expand="lg" style={{backgroundColor:"blue"}}>
+    <Navbar bg="" variant="dark" expand="lg" style={{backgroundColor:"gray"}}>
       <Container>
         <Navbar.Brand><Link to='/shome' style={{color:"white",textDecoration:"none"}}>BookStore(Admin)</Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

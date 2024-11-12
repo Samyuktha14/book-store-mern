@@ -55,8 +55,8 @@ const handleSubmit = async (e) => {
   return (
     <div> 
         <Vnavbar/>
-    <div className="max-w-md mx-auto mt-8 p-4 border rounded shadow-lg" style={{backgroundColor:"lightskyblue"}}>
-      <h2 className="text-2xl font-semibold mb-4">Add Furniture</h2>
+    <div className="max-w-md mx-auto mt-8 p-4 border rounded shadow-lg" style={{backgroundColor:"lightgrey"}}>
+      <h2 className="text-2xl font-semibold mb-4">Add Book</h2>
       <form onSubmit={handleSubmit}>
       <div className="mb-4">
           {/* <label className="block text-gray-600">Car Model</label> */}
@@ -132,7 +132,7 @@ const handleSubmit = async (e) => {
         </div>
         <button
           type="submit"
-          className="bg-blue-900 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          className="bg-gray-900 hover:bg-gray-500 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
         >
           Submit
         </button>
