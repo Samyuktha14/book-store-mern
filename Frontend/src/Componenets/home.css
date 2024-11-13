@@ -1,0 +1,187 @@
+/* General Styles for the Section Below the Navbar */
+.content-container {
+    background: #f9f9f9;  /* Light background for the content */
+    padding: 80px 20px;
+    text-align: center;
+    margin-top: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Section Title Styling */
+  h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Interactive text hover effect */
+  h1:hover, h2:hover, h3:hover {
+    color: #007b7f;  /* Change to a teal color */
+    transform: translateY(-5px); /* Subtle movement effect */
+  }
+  
+  /* Paragraph Styling */
+  p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.7;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: color 0.3s ease;
+  }
+  
+  p:hover {
+    color: #007b7f; /* Change color when hovered */
+  }
+  
+  /* Style for List Items (for Why Choose Us and Explore Categories) */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: left;
+    display: inline-block;
+    max-width: 800px;
+  }
+  
+  /* List Item Styling */
+  ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+    transition: color 0.3s ease;
+  }
+  
+  ul li:hover {
+    color: #007b7f;  /* Change color when hovered */
+  }
+  
+  /* Card-like Layout for the Welcome Section */
+  .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 280px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card h4 {
+    color: #007b7f;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .card p {
+    color: #666;
+    font-size: 16px;
+  }
+  
+  /* Call to Action Button Styling */
+  .cta-button {
+    padding: 15px 30px;
+    background-color: #007b7f;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #005f5f; /* Darken on hover */
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  .book-list-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .book-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .book-card {
+    width: 180px;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .book-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .book-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .book-info h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .book-info p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .cta-button-container {
+    margin-top: 30px;
+  }
+  
+  .cta-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #007b7f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #005f5f;
+  }
+  

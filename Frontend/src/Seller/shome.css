@@ -1,0 +1,70 @@
+/* src/components/Shome.css */
+
+/* Card Styling */
+.dashboard-card {
+    background-color: wheat;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20px;
+    height: 580px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Layout for Stats Cards */
+  .dashboard-stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Individual Stat Card Styling */
+  .stat-card {
+    width: 200px;
+    height: 120px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Custom Styling for Links */
+  .dashboard-link {
+    text-decoration: none;
+    color: inherit; /* Inherit the text color from the parent element */
+  }
+  
+  /* Bar Chart Container */
+  .chart-container {
+    padding-left: 200px;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .dashboard-card {
+      width: 90%;
+    }
+  
+    .dashboard-stats {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .stat-card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    .chart-container {
+      padding-left: 0;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  

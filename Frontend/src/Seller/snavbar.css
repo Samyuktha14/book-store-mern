@@ -1,0 +1,36 @@
+/* Snavbar.css */
+.navbar-custom {
+    background-color: teal;
+  }
+  
+  .navbar-custom .navbar-brand {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-custom .nav-link {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  /* Remove the line on hover */
+  .navbar-custom .nav-link:hover {
+    color: #f0f0f0;
+  }
+  
+  .navbar-custom .nav-link:focus {
+    color: #f0f0f0;
+  }
+  
+  .navbar-custom .user-name {
+    color: white;
+    padding-top: 0px;
+    font-size: 1rem;
+    margin-left: 15px;
+  }
+  

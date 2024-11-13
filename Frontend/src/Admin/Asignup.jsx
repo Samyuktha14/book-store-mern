@@ -88,7 +88,7 @@ const Asignup = () => {
               required
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              className="mt-1 p-2 block w-full border border-green-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
               placeholder="Password"
             />
           </div>
@@ -96,7 +96,7 @@ const Asignup = () => {
           <div>
             <button
               type="submit"
-              className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring focus:border-indigo-300 transition-all duration-300"
+              className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring focus:border-indigo-300 transition-all duration-300"
             >
               Signup
             </button>
@@ -106,14 +106,14 @@ const Asignup = () => {
             Already have an account?{' '}
             <button
               onClick={formHandle1}
-              className="text-bg-gray-500 hover:underline focus:outline-none focus:ring focus:border-indigo-300 transition-all duration-300"
+              className="text-bg-green-500 hover:underline focus:outline-none focus:ring focus:border-indigo-300 transition-all duration-300"
             >
               Login
             </button>
           </p>
         </form>
 
-        <div className="absolute h-full w-full bg-gray-500 transform -skew-y-6 origin-bottom-right"></div>
+        <div className="absolute h-full w-full bg-green-500 transform -skew-y-6 origin-bottom-right"></div>
        
       </div>
     </div>

@@ -55,7 +55,7 @@ const handleSubmit = async (e) => {
   return (
     <div> 
         <Vnavbar/>
-    <div className="max-w-md mx-auto mt-8 p-4 border rounded shadow-lg" style={{backgroundColor:"lightgrey"}}>
+    <div className="max-w-md mx-auto mt-8 p-4 border rounded shadow-lg" style={{backgroundColor:"gray"}}>
       <h2 className="text-2xl font-semibold mb-4">Add Book</h2>
       <form onSubmit={handleSubmit}>
       <div className="mb-4">

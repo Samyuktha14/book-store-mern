@@ -95,7 +95,7 @@ const Alogin = () => {
             <div>
               <button
                 type="submit"
-                className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring focus:border-gray-300 transition-all duration-300"
+                className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring focus:border-gray-300 transition-all duration-300"
               >
                 Log in
               </button>
@@ -104,7 +104,7 @@ const Alogin = () => {
                 Don't have an account? Create
                 <button
                   onClick={formHandle1}
-                  className="ml-2 text-gray-400 hover:underline focus:outline-none focus:ring focus:border-gray-300 transition-all duration-300"
+                  className="ml-2 text-green-400 hover:underline focus:outline-none focus:ring focus:border-gray-300 transition-all duration-300"
                 >
                   Signup
                 </button>
@@ -116,7 +116,7 @@ const Alogin = () => {
 
         {/* Backside tilted background */}
         <div
-          className="absolute h-full w-full bg-gray-500 transform -skew-y-6 origin-bottom-right"
+          className="absolute h-full w-full bg-green-500 transform -skew-y-6 origin-bottom-right"
         ></div>
         
       </div>

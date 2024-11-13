@@ -29,7 +29,7 @@ const Book = () => {
       {item && (
         <div>
             <div style={{display:"flex",justifyContent:"center",height:"450px"}} >
-            <img src={`http://localhost:4000/${item?.itemImage}`} alt={`${item.itemtype} Image`}  />
+            <img src={`http://localhost:4000/uploads/${item.itemImage}`}alt="Item Image" />
                 </div>
                 <h1 className='text-center'> {item.itemtype}-{item._id.slice(3,7)}</h1>
                 <div style={{ display: 'flex', justifyContent: 'space-around' }}>

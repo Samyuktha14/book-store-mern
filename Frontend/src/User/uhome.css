@@ -1,29 +1,108 @@
-#uhome{
-    height: 700px;
-    background-image: url("https://furniture-shop-site.netlify.app/static/media/defaultBcg.9a1103b5.jpeg");
-    color: rgb(255, 255, 255);
-    
-}
-
-#hh{
+/* Centered text style for headings */
+.text-center {
+    text-align: center;
+  }
   
-    margin-top: 200px;
-    margin-left: 480px;
-    margin-right: 480px;
-    background-color: #45444492;
-   
-}
-#bt{
+  /* General Heading Style */
+  h1, h2 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-weight: bold;
+  }
   
-    height: 60px;
-    width: 170px;
-    background-color: rgb(167,149,125);
+  /* Card Style */
+  .card {
     border: none;
-    color: black;
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-#bt:hover{
-    cursor: pointer;
-    opacity: 0.8;
-}
+    border-radius: 10px;  /* Round edges for cards */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);  /* Soft shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth hover effect */
+    width: 90%;  /* Set the width of the card */
+    max-width: 250px;  /* Limit the maximum width */
+    margin: 0 auto;  /* Center the cards within their columns */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);  /* Lift the card on hover */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);  /* Deep shadow effect */
+  }
+  
+  /* Card Body (Spacing and Typography) */
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-title {
+    font-size: 1rem;  /* Slightly smaller font size */
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Card Image Styling */
+  .card img {
+    width: 100%;  /* Ensure the image takes up the full width of the card */
+    height: auto;  /* Remove max-height restriction */
+    object-fit: contain;  /* Display the full image without cropping */
+    border-radius: 10px;
+    transition: transform 0.3s ease;  /* Smooth zoom effect */
+  }
+  
+  .card img:hover {
+    transform: scale(1.05);  /* Slight zoom effect on hover */
+  }
+  
+  /* Margin and Spacing */
+  .mb-4 {
+    margin-bottom: 2rem;
+  }
+  
+  h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #2c3e50;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 36px;
+    color: #34495e;
+    font-weight: 600;
+  }
+  
+  /* Section Title Styling */
+  .section-title {
+    font-size: 36px;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  /* Responsive Layout for Cards */
+  @media (max-width: 992px) {
+    .card {
+      margin: 10px;  /* Add margin for spacing on smaller screens */
+      width: 85%;  /* Reduce card width for smaller screens */
+      max-width: 220px;  /* Slightly smaller max width */
+    }
+  
+    h1, h2 {
+      font-size: 30px;  /* Adjust font size for smaller screens */
+    }
+  
+    .card-title {
+      font-size: 0.9rem;  /* Adjust font size of titles */
+    }
+  
+    /* Card Image adjustment for smaller screens */
+    .card img {
+      width: 100%;  /* Ensure the image takes up the full width of the card */
+      height: auto;
+    }
+  }
+  
+  /* Padding around Rows */
+  .row {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  

@@ -8,11 +8,16 @@ const users = require('./db/Users/userschema')
 const seller = require('./db/Seller/Sellers')
 const items = require('./db/Seller/Additem')
 const myorders = require('./db/Users/myorders')
-const WishlistItem = require('./db/Users/Wishlist')     
+const WishlistItem = require('./db/Users/Wishlist') 
+const path=require('path')
 
 const app = express()
 
 app.use(express.json())
+
+// Serve files from the 'uploads' folder
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
 
 app.use(cors({
     origin: ["http://localhost:5173"],
@@ -168,7 +173,7 @@ app.post('/ssignup', (req, resp) => {
 // addBook
 app.post('/items', upload.single('itemImage'), async (req, res) => {
     const { title, author, genre, description, price, userId, userName } = req.body;
-    const itemImage = req.file.path; // The path to the uploaded image
+    const itemImage = `uploads/${req.file.filename}`; // Save relative path
 
     try {
         const item = new items({ itemImage, title, author, genre, description, price, userId, userName });
@@ -178,6 +183,7 @@ app.post('/items', upload.single('itemImage'), async (req, res) => {
         res.status(400).json({ error: 'Failed to create item' });
     }
 });
+
 //getbooks
 app.get('/getitem/:userId', async (req, res) => {
     const userId = req.params.userId;

@@ -1,0 +1,83 @@
+/* Navbar Styling */
+.navbar-custom {
+    background-color: teal;
+    border-bottom: 2px solid #fff;  /* Subtle white border at the bottom */
+}
+
+.navbar-brand-link {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-brand-link:hover {
+    color: #e0e0e0;  /* Slightly lighter color on hover */
+}
+
+/* Navigation Links */
+.navbar-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-link {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;  /* Smooth color transition */
+}
+
+.navbar-link:hover {
+    color: #cccccc;  /* Lessen the hover color intensity */
+    background-color: transparent;  /* No background change */
+}
+
+/* Logout Link Styling */
+.navbar-logout {
+    padding-left: 10px;
+    padding-top: 10px;
+    border-left: 2px solid #fff;  /* Border between links and logout */
+}
+
+.navbar-user-name {
+    color: white;
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: normal;
+    margin-left: 15px;
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 992px) {
+    .navbar-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-link {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .navbar-logout {
+        padding-top: 8px;
+        border-left: none;
+    }
+
+    .navbar-user-name {
+        font-size: 16px;
+        padding-top: 8px;
+    }
+
+    /* Hide user name on smaller screens */
+    .navbar-user-name {
+        display: none;
+    }
+}

@@ -1,24 +1,31 @@
-// src/components/Navbar.js
+// src/components/Unavbar.js
 
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import {Link } from "react-router-dom"
+import { Link } from 'react-router-dom';
+import './Unavbar.css';  // Import the CSS file for styling
 
 const Unavbar = () => {
-  const get=localStorage.getItem('user')
+  const user = localStorage.getItem('user');
+  const userName = user ? JSON.parse(user).name : "Guest";  // Fallback to "Guest" if no user
+
   return (
-    <Navbar bg="" variant="dark" expand="lg" style={{backgroundColor:"gray"}}>
+    <Navbar expand="lg" className="navbar-custom">
       <Container>
-        <Navbar.Brand ><Link to='/uhome' style={{color:'white',textDecoration:"none"}}>BookStore</Link></Navbar.Brand>
+        <Navbar.Brand>
+          <Link to='/uhome' className="navbar-brand-link">
+            <b>𓂃🖊 BookStore</b>
+          </Link>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto" >
-            <Link to="/uhome" style={{padding:"10px",color:"white",textDecoration:"none"}}>Home</Link>
-            <Link to="/uproducts" style={{padding:"10px",color:"white",textDecoration:"none"}}>Books</Link>
-            <Link to="/wishlist" style={{padding:"10px",color:"white",textDecoration:"none"}}>Wishlist</Link>
-            <Link to="/myorders" style={{padding:"10px",color:"white",textDecoration:"none"}}>My orders</Link>
-            <Link to="/" style={{paddingLeft:"10px",paddingTop:"10px",color:"white",textDecoration:"none"}}>Logout</Link>
-            <h4 style={{color:"white",paddingTop:"0px"}}>({JSON.parse(get).name} )</h4>
+          <Nav className="ml-auto">
+            <Link to="/uhome" className="navbar-link"><b>Home</b></Link>
+            <Link to="/uproducts" className="navbar-link"><b>Books</b></Link>
+            <Link to="/wishlist" className="navbar-link"><b>Wishlist</b></Link>
+            <Link to="/myorders" className="navbar-link"><b>My orders</b></Link>
+            <Link to="/" className="navbar-link navbar-logout"><b>Logout</b></Link>
+            <h4 className="navbar-user-name">{userName} 👤</h4>
           </Nav>
         </Navbar.Collapse>
       </Container>
